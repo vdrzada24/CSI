@@ -17,9 +17,9 @@ import android.widget.TextView;
 import java.io.Flushable;
 
 public class MainActivity extends AppCompatActivity {
-    Animation top_animation,bottom_animation;
-    ImageView img;
-    TextView v;
+
+    ImageView i1;
+    TextView t1;
     private static int DELAY=3000;
 
     @SuppressLint("MissingInflatedId")
@@ -29,22 +29,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        top_animation= AnimationUtils.loadAnimation(this,R.anim.top_animation);
-        bottom_animation=AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
 
-        v=(TextView) findViewById(R.id.tv1);
-        img=(ImageView) findViewById(R.id.img1);
 
-        img.setAnimation(top_animation);
-        v.setAnimation(bottom_animation);
+        t1=(TextView) findViewById(R.id.tv1);
+        i1=(ImageView) findViewById(R.id.img1);
+
+        i1.animate().translationY(-1195).setDuration(2000).setStartDelay(0);
+        t1.animate().translationY(1195).setDuration(2000).setStartDelay(0);
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent i=new Intent(MainActivity.this,Home.class);
 
                 Pair[] pairs=new Pair[2];
-                pairs[0]=new Pair(img,"splash_img");
-                pairs[1]=new Pair(v,"splash_text");
+                pairs[0]=new Pair(i1,"splash_img");
+                pairs[1]=new Pair(t1,"splash_text");
 
                 ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
                 startActivity(i,options.toBundle());

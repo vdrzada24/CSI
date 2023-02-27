@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="WELCOME"
         android:textSize="35dp"
+        android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:layout_marginTop="20pt"
@@ -32,8 +33,9 @@
 
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="20pt"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="40dp"
@@ -41,12 +43,13 @@
         android:textColor="@color/black"
         android:background="@drawable/text"
         android:textColorHint="@color/black"
-        android:hint="email"
+        android:hint="Email"
         android:paddingLeft="20dp"/>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="20pt"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="40dp"
@@ -54,7 +57,7 @@
         android:textColorHint="@color/black"
         android:background="@drawable/text"
         android:textColor="@color/black"
-        android:hint="password"
+        android:hint="Password"
         android:paddingLeft="20dp"/>
     <Button
         android:layout_width="150dp"
@@ -62,10 +65,11 @@
         android:id="@+id/button1"
         android:background="@drawable/text"
         android:text="LOGIN"
+
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         android:transitionName="splash_img"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="40dp"/>
 
 
 
