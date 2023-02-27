@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         i1.animate().translationY(-1195).setDuration(2000).setStartDelay(0);
         t1.animate().translationY(1195).setDuration(2000).setStartDelay(0);
 
+        
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
