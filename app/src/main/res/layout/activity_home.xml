@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".Home">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20pt"
+        android:transitionName="splash_text"
+        android:id="@+id/tv2"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lo"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/edittext1"
+        android:textColor="@color/black"
+        android:background="@drawable/text"
+        android:textColorHint="@color/black"
+        android:hint="email"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/edittext2"
+        android:textColorHint="@color/black"
+        android:background="@drawable/text"
+        android:textColor="@color/black"
+        android:hint="password"
+        android:paddingLeft="20dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:background="@drawable/text"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="splash_img"
+        android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
