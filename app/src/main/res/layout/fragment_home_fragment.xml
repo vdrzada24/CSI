@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#00BCD4"
+    android:background="@drawable/back"
     tools:context=".Home_fragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -23,7 +23,7 @@
             android:id="@+id/imageslider"
             app:iss_period="1000"
             app:iss_auto_cycle="true"
-            app:iss_delay="1000"
+            app:iss_delay="3000"
             app:iss_corner_radius="20"/>
 
     </androidx.cardview.widget.CardView>
