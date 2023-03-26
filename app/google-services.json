@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807750416890",
+    "project_id": "csi-c1554",
+    "storage_bucket": "csi-c1554.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807750416890:android:490ff0b36831abc6128c43",
+        "android_client_info": {
+          "package_name": "com.example.csi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807750416890-r3fl0030qspt3utbhg40vmcii3jduqlk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Wj3-ry0nHlFmFCOseQY8abDmR42ZzHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807750416890-r3fl0030qspt3utbhg40vmcii3jduqlk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

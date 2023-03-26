@@ -13,14 +13,20 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class After_login extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    FirebaseUser currentUser;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +35,8 @@ public class After_login extends AppCompatActivity {
         drawerLayout=findViewById(R.id.drawerLayout);
         navigationView=findViewById(R.id.navigationView);
         toolbar=findViewById(R.id.toolbar);
+        mAuth=FirebaseAuth.getInstance();
+        currentUser=mAuth.getCurrentUser();
 
         setSupportActionBar(toolbar);
 
@@ -37,6 +45,7 @@ public class After_login extends AppCompatActivity {
         toggle.syncState();
 
         loadfragment(new Home_fragment());
+        updateNavHeader();
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -65,8 +74,17 @@ public class After_login extends AppCompatActivity {
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
+
             }
         });
+
+    }
+    public void updateNavHeader()
+    {
+        navigationView=findViewById(R.id.navigationView);
+        View headerview=navigationView.getHeaderView(0);
+        TextView nav_usermail=headerview.findViewById(R.id.nav_usermail);
+        nav_usermail.setText(currentUser.getEmail());
 
     }
 
