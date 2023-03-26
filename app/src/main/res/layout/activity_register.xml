@@ -6,19 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/back"
-    tools:context=".Home">
+    tools:context=".Register">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WELCOME"
+        android:text="SIGNUP"
         android:textSize="35dp"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:layout_marginTop="20pt"
-        android:transitionName="splash_text"
-        android:id="@+id/tv2"/>
+        android:id="@+id/tv3"/>
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
@@ -28,9 +27,7 @@
         android:layout_marginTop="20dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/lo"/>
-
-
+        app:lottie_rawRes="@raw/register"/>
 
     <EditText
         android:layout_width="320dp"
@@ -39,7 +36,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="40dp"
-        android:id="@+id/edittext1"
+        android:id="@+id/edittext3"
         android:textColor="@color/black"
         android:background="@drawable/text"
         android:textColorHint="@color/black"
@@ -54,19 +51,20 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="40dp"
-        android:id="@+id/edittext2"
+        android:id="@+id/edittext4"
         android:textColorHint="@color/black"
         android:background="@drawable/text"
         android:textColor="@color/black"
-        android:hint="Password"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:hint="Password"
         android:paddingLeft="10dp"/>
+
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button1"
+        android:id="@+id/button2"
         android:background="@drawable/text"
-        android:text="LOGIN"
+        android:text="SIGNUP"
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         android:transitionName="splash_img"
@@ -75,21 +73,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Not registered yet? Signup"
+        android:text="Already registered? Login"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:id="@+id/txt1"/>
-
-
-
-
-
-
-
-
-
-
+        android:id="@+id/txt2"/>
 
 
 
