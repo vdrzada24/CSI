@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Review_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="Review Task"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinssemibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="To: "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="20pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edittext8"
+            android:textColor="@color/black"
+            android:background="@drawable/text"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="Subject: "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="20pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edittext9"
+            android:textColor="@color/black"
+            android:background="@drawable/text"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="Task Updates: "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:lines="10"
+            android:gravity="start|top"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edittext10"
+            android:textColor="@color/black"
+            android:background="@drawable/message"
+            android:padding="12dp"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:background="@drawable/text"
+            android:text="Send"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

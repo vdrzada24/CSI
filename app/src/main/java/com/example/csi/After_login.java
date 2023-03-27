@@ -61,10 +61,10 @@ public class After_login extends AppCompatActivity {
                     Toast.makeText(After_login.this, "Leads", Toast.LENGTH_SHORT).show();
                 }
                 else if(id==R.id.assign){
-                    Toast.makeText(After_login.this, "Assign Task", Toast.LENGTH_SHORT).show();
+                    loadfragment(new Assign_fragment());
                 }
                 else if(id==R.id.review){
-                    Toast.makeText(After_login.this, "Review Task", Toast.LENGTH_SHORT).show();
+                    loadfragment(new Review_fragment());
                 }
                 else if(id==R.id.calendar){
                     Toast.makeText(After_login.this, "Calendar", Toast.LENGTH_SHORT).show();
