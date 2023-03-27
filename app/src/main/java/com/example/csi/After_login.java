@@ -93,10 +93,13 @@ public class After_login extends AppCompatActivity {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START);
 
+
         }
         else{
-            super.onBackPressed();
-            finish();
+
+            loadfragment(new Home_fragment());
+
+
         }
     }
 
