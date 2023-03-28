@@ -35,9 +35,7 @@
         android:layout_marginRight="10dp"
         android:id="@+id/calendarview"
         android:layout_marginTop="40dp"
-        android:background="@color/white"
-
-
+        android:background="#3B8BBA"
         android:layout_height="wrap_content"/>
 
 
