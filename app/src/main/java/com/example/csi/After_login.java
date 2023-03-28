@@ -67,7 +67,7 @@ public class After_login extends AppCompatActivity {
                     loadfragment(new Review_fragment());
                 }
                 else if(id==R.id.calendar){
-                    Toast.makeText(After_login.this, "Calendar", Toast.LENGTH_SHORT).show();
+                    loadfragment(new Calendar_fragment());
                 }
                 else if(id==R.id.version){
                     Toast.makeText(After_login.this, "Version", Toast.LENGTH_SHORT).show();

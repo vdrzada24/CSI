@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6586787"
+    android:orientation="vertical"
+    tools:context=".Calendar_fragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Calendar"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#2B2B2B"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/day"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#2B2B2B"/>
+
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:id="@+id/calendarview"
+        android:layout_marginTop="30dp"
+
+
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>
