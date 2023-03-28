@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E6586787"
+    android:background="@drawable/back"
     android:orientation="vertical"
     tools:context=".Calendar_fragment">
 
@@ -12,25 +12,30 @@
         android:layout_height="40dp"
         android:text="Calendar"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="35dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinssemibold"
         android:gravity="center"
-        android:textColor="#2B2B2B"/>
+        android:textColor="@color/white"/>
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:id="@+id/day"
         android:gravity="center"
         android:textSize="20dp"
-        android:textColor="#2B2B2B"/>
+        android:textColor="@color/white"/>
 
 
     <CalendarView
         android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:id="@+id/calendarview"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
 
 
         android:layout_height="wrap_content"/>

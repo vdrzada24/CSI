@@ -58,7 +58,7 @@ public class After_login extends AppCompatActivity {
                     loadfragment(new About_fragment());
                 }
                 else if(id==R.id.leads){
-                    Toast.makeText(After_login.this, "Leads", Toast.LENGTH_SHORT).show();
+                    loadfragment(new Leads_fragment());
                 }
                 else if(id==R.id.assign){
                     loadfragment(new Assign_fragment());
