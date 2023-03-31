@@ -70,7 +70,14 @@ public class After_login extends AppCompatActivity {
                     loadfragment(new Calendar_fragment());
                 }
                 else if(id==R.id.version){
-                    Toast.makeText(After_login.this, "Version", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(After_login.this, "Version 1.0.0", Toast.LENGTH_SHORT).show();
+                }
+                else if(id==R.id.logout){
+                    mAuth.signOut();
+                    Intent afterlogout=new Intent(After_login.this,Home.class);
+                    startActivity(afterlogout);
+                    finish();
+                    Toast.makeText(After_login.this, "Logout Successful", Toast.LENGTH_SHORT).show();
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;

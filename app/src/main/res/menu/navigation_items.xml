@@ -36,4 +36,9 @@
         android:title="Version"
         android:icon="@drawable/ic_baseline_perm_device_information_24"
         />
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_logout_24"
+        />
 </menu>
