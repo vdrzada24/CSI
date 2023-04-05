@@ -3,15 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".Managementlead_fragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_color="#0A486C"
+        app:civ_border_width="2dp"
         android:id="@+id/image_president"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:src="@drawable/image1"
+        android:src="@drawable/jaisheel"
         android:scaleType="centerCrop"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"/>
@@ -20,7 +23,7 @@
         android:id="@+id/name_president"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="President name"
+        android:text="Jaisheel Nakum"
         android:textSize="21dp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -31,7 +34,7 @@
         android:id="@+id/post_president"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Post"
+        android:text="Managemenet Lead"
         android:textSize="21dp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -46,4 +49,33 @@
         android:textColor="@color/black"
         android:padding="2dp"
         android:text="Virat Kohli (Hindi pronunciation: [ʋɪˈɾɑːʈ ˈkoːɦli] (listen); born 5 November 1988) is an Indian international cricketer and the former captain of the Indian national cricket team who plays as a right-handed batsman for Royal Challengers Bangalore in the IPL and for the Delhi in Indian domestic cricket. Widely regarded as one of the greatest batsmen of all time"/>
+
+    <TextView
+        android:id="@+id/phone_applead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawablePadding="2dp"
+        android:text="8005898333"
+        android:textSize="15dp"
+
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/email_applead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawablePadding="2dp"
+        android:text="sa5700@srmist.edu.in"
+        android:textSize="15dp"
+
+        android:drawableStart="@drawable/baseline_email_24"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        />
+
 </LinearLayout>
