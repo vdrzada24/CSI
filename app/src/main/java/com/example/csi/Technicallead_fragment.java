@@ -1,5 +1,8 @@
 package com.example.csi;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,60 +10,39 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Technicallead_fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class Technicallead_fragment extends BottomSheetDialogFragment {
+    TextView phonenumber;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public Technicallead_fragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Technicallead_fragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Technicallead_fragment newInstance(String param1, String param2) {
-        Technicallead_fragment fragment = new Technicallead_fragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_technicallead_fragment, container, false);
+        View v= inflater.inflate(R.layout.fragment_technicallead_fragment, container, false);
+        phonenumber=(TextView)v.findViewById(R.id.phone_techlead);
+        phonenumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String s=phonenumber.getText().toString();
+                Intent intent=new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+s));
+                startActivity(intent);
+
+            }
+        });
+        return v;
     }
 }

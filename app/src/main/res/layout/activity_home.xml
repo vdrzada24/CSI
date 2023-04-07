@@ -58,7 +58,7 @@
         android:textColorHint="@color/black"
         android:background="@drawable/text"
         android:textColor="@color/black"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:hint="Password"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:paddingLeft="10dp"/>

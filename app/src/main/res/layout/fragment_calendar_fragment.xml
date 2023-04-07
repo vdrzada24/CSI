@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/back"
     android:orientation="vertical"
     tools:context=".Calendar_fragment">
@@ -26,17 +27,31 @@
         android:id="@+id/day"
         android:gravity="center"
         android:textSize="20dp"
+
         android:textColor="@color/white"/>
 
-
-    <CalendarView
-        android:layout_width="match_parent"
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:cardBackgroundColor="#D8DDDF"
         android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
         android:layout_marginRight="10dp"
-        android:id="@+id/calendarview"
         android:layout_marginTop="40dp"
-        android:background="#3B8BBA"
-        android:layout_height="wrap_content"/>
+        app:cardCornerRadius="8dp">
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/calendarview"
+
+            android:background="#3B8BBA"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.cardview.widget.CardView>
 
 
 

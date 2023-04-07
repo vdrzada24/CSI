@@ -38,7 +38,8 @@ public class Home_fragment extends Fragment {
         slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image4, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image5, ScaleTypes.FIT));
-
+        slideModels.add(new SlideModel(R.drawable.image6, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image7, ScaleTypes.FIT));
         imageSlider.setImageList(slideModels,ScaleTypes.FIT);
 
         return v;
