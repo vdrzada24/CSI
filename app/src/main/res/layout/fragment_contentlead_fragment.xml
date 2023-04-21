@@ -14,7 +14,7 @@
         android:id="@+id/image_president"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:src="@drawable/image1"
+        android:src="@drawable/chitjyot"
         android:scaleType="centerCrop"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"/>

@@ -350,7 +350,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/satyampic"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -443,7 +443,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/kinshuk"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -490,7 +490,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/palak"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -629,7 +629,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/siddhant"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -675,7 +675,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/mridul"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -722,7 +722,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/ekansh"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -817,7 +817,7 @@
                             android:layout_width="100dp"
                             android:scaleType="centerCrop"
                             android:layout_height="100dp"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/kk_bhaiya"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -864,7 +864,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/kk_didi"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -912,7 +912,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/nikhil"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -959,7 +959,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/kshitij"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1006,7 +1006,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/chitjyot"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1100,7 +1100,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/ishika"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1147,7 +1147,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/csilogo"/>
+                            android:src="@drawable/aarya"/>
 
                         <TextView
                             android:layout_width="wrap_content"
