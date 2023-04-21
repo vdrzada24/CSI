@@ -58,6 +58,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Home.this,Register.class));
+
             }
         });
 

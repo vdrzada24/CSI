@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
                 ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
                 startActivity(i,options.toBundle());
+                finish();
 
 
             }
