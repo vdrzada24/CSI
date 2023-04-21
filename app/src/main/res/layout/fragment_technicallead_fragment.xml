@@ -42,15 +42,6 @@
         android:layout_marginTop="4dp"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:textSize="16dp"
-        android:textColor="@color/black"
-        android:padding="7dp"
-        android:text="Virat Kohli (Hindi pronunciation: [ʋɪˈɾɑːʈ ˈkoːɦli] (listen); born 5 November 1988) is an Indian international cricketer and the former captain of the Indian national cricket team who plays as a right-handed batsman for Royal Challengers Bangalore in the IPL and for the Delhi in Indian domestic cricket. Widely regarded as one of the greatest batsmen of all time"/>
-
-    <TextView
         android:id="@+id/phone_techlead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
